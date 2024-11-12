@@ -11,7 +11,8 @@ faut bien le dire !
 # Installe les codecs "classiques" comme mpeg4
 **$ sudo apt-get install libavcodec-unstripped-52 libavdevice-unstripped-52**
 
-Assurez-vous d'avoir installé requests et gTTS :
+# Assurez-vous d'avoir installé requests et gTTS :
+
 **$pip install requests gTTS**
 
 **cd /opt**
