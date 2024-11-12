@@ -14,16 +14,13 @@
 ###############################################################################from pydub import AudioSegment
 
 
-
-
-
 import requests  
 from gtts import gTTS  
 from pydub import AudioSegment  
 from datetime import datetime
 
 # Remplacez 'your_api_key' par votre clé API OpenWeatherMap  
-API_KEY = 'your_api_key'
+API_KEY = '77d9ca3addc1f112c2d8663ea07f1393'
 CITY = 'Lille'  # Changez cela pour la ville que vous voulez  
 URL = f"http://api.openweathermap.org/data/2.5/weather?q={CITY}&appid={API_KEY}&units=metric"
 
@@ -40,7 +37,7 @@ if response.status_code == 200:
     rain_amount = data.get('rain', {}).get('1h', 0)  # Précipitations en mm pour la dernière heure  
     sunrise = datetime.fromtimestamp(data['sys']['sunrise']).strftime('%H:%M:')  # Lever du soleil  
     sunset = datetime.fromtimestamp(data['sys']['sunset']).strftime('%H:%M:')    # Coucher du soleil  
-    date_time = datetime.now().strftime('%H:%M:')  # Date et heure actuelles
+    date_time = datetime.now().strftime('%H:%M:%S:')  # Date et heure actuelles
     # Convertir la direction du vent en cardinal (N, NE, E, SE, S, SW, W, NW)
     if 337.5 <= wind_deg < 360 or 0 <= wind_deg < 22.5:
         wind_direction = "Nord"
@@ -62,7 +59,7 @@ if response.status_code == 200:
     # Préparer l'information météo  
     weather_info = (
         f"Heure du dernier bulletin météo: {date_time}\n"
-        f"La température à {CITY} est de {temperature} degrés Celsius.\n"
+        f"La température à {CITY} est de {temperature} degrés.\n"
         f"La vitesse du vent est de {wind_speed} mètres par seconde venant de {wind_direction}.\n"
         f"L'humidité est de {humidity} %.\n"
         f"Les précipitations dans la dernière heure sont de {rain_amount} millimètres.\n"
