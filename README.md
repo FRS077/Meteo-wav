@@ -20,3 +20,19 @@ Assurez-vous d'avoir installé requests et gTTS :
 
 **cd /Meteo-wav**
 
+# configuration du  : 
+**sudo nano meteo-wav.py**
+
+    Remplacez your_api_key par votre propre clé API que vous obtenez en vous inscrivant sur le site d'OpenWeatherMap.
+    Exécutez le script dans votre environnement Python.
+
+Explication des éléments du code
+
+    Récupération des données : Le script utilise l'API OpenWeatherMap pour récupérer les informations météorologiques.
+    Traitement des données : Les informations telles que la température, la vitesse et la direction du vent, l'humidité, les précipitations, le lever et le coucher du soleil sont extraites.
+    Conversion du texte en audio : Le texte est converti en audio WAV à l'aide de gTTS.
+    Modification des caractéristiques audio : Le fichier WAV est ensuite traité avec pydub pour le convertir en 8000 Hz, 16 bits et mono.
+    Enregistrement dans un fichier texte : Les informations sont également enregistrées dans un fichier texte pour consultation ultérieure.
+
+Ce script permet d'obtenir toutes les informations météorologiques souhaitées et de les enregistrer de manière appropriée.
+
