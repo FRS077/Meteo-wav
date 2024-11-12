@@ -1,3 +1,5 @@
+# Installer les bibliothèques nécessaires
+
 Installer FFMPEG (Linux)
 L’installation sous Linux est relativement simple et peut s’effectuer de différentes manières.
 Sur Debian et dérivés
@@ -8,9 +10,10 @@ $ sudo apt-get install ffmpeg
 # Installe les codecs "classiques" comme mpeg4
 $ sudo apt-get install libavcodec-unstripped-52 libavdevice-unstripped-52
 
-
-
-Étape 1 : Installer les bibliothèques nécessaires
 Assurez-vous d'avoir installé requests et gTTS :
+$pip install requests gTTS
 
-pip install requests gTTS
+cd /opt
+git clone https://github.com/FRS077/Meteo-wav.git
+cd /Meteo-wav
+
