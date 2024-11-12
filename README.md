@@ -15,6 +15,8 @@ Assurez-vous d'avoir installé requests et gTTS :
 **$pip install requests gTTS**
 
 **cd /opt**
+
 **git clone https://github.com/FRS077/Meteo-wav.git**
+
 **cd /Meteo-wav**
 
