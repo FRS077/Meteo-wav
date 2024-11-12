@@ -21,7 +21,7 @@ faut bien le dire !
 
 **cd /Meteo-wav**
 
-# configuration du  : 
+# configuration : 
 **sudo nano meteo-wav.py**
 
     Remplacez your_api_key par votre propre clé API que vous obtenez en vous inscrivant sur le site d'OpenWeatherMap.
