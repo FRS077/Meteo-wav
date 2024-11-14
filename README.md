@@ -1,3 +1,6 @@
+# Mettre à jour la liste des paquets
+**sudo apt-get update**
+
 # Installer les bibliothèques nécessaires
 
 Installer FFMPEG (Linux)
