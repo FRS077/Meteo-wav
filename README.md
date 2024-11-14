@@ -17,8 +17,11 @@ faut bien le dire !
 # Assurez-vous d'avoir installé requests et gTTS :
 
 **sudo pip install requests gTTS**
+
 **pip install gTTS requests**
+
 **pip install pydub**
+
 **pip install DateTime**
 
 **cd /opt**
