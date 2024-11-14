@@ -18,11 +18,11 @@ faut bien le dire !
 
 **sudo pip install requests gTTS**
 
-**pip install gTTS requests**
+**sudo pip install gTTS requests**
 
-**pip install pydub**
+**sudo pip install pydub**
 
-**pip install DateTime**
+**sudo pip install DateTime**
 
 **cd /opt**
 
